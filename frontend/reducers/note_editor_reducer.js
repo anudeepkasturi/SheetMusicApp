@@ -2,7 +2,6 @@ import {
   SELECT_NOTE_TYPE
 } from '../actions/note_editor_actions';
 
-import merge from 'lodash/merge';
 
 let defaultState = null;
 

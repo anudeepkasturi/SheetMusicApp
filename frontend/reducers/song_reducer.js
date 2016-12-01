@@ -2,8 +2,6 @@ import {
   ADD_NOTE
 } from '../actions/song_actions';
 
-import merge from 'lodash/merge';
-
 let defaultState = [];
 
 const SongReducer = (state = defaultState, action) => {
