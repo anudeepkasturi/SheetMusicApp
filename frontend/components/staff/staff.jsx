@@ -26,9 +26,8 @@ class Staff extends React.Component {
 
     for (var j = 0; j < song.length; j++) {
       let note = song[j];
-      notes.push(<Note key={j} note={note}/>);
+      notes.push(<Note key={j} id={j} note={note}/>);
     }
-
 
     return (
       <div className="staff-container">

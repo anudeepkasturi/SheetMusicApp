@@ -26,10 +26,14 @@ footer, header, hgroup, menu, nav, section {
 html {
   height: 100%;
   min-height: 1500px;
+  background: linear-gradient( #E6E6E6 ,#ccc);
+  
 }
 body, .user-page, #root, #root>div {
  height: 100%;
  line-height: 1;
+ background: linear-gradient( #E6E6E6 ,#ccc);
+
 }
 
 ol, ul {
@@ -46,8 +50,4 @@ q:before, q:after {
 table {
  border-collapse: collapse;
  border-spacing: 0;
-}
-
-main>div {
-  background: linear-gradient( #E6E6E6 ,#ccc);
 }
