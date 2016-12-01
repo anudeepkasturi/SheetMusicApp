@@ -4,17 +4,16 @@ import {
 
 import merge from 'lodash/merge';
 
-let defaultState = {};
+let defaultState = [];
 
 const SongReducer = (state = defaultState, action) => {
   Object.freeze(state);
 
-  let newState = merge({}, state);
+  let newState = state;
 
   switch (action.type) {
     case ADD_NOTE:
-      console.log(action);
-      return action.note;
+      return newState.concat(action.note);
     default:
       return state;
   }

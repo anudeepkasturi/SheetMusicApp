@@ -1,8 +1,11 @@
 import React from 'react';
 import Sheet from './sheet/sheet';
+import NoteEditorContainer from './note_editor/note_editor_container';
+
 
 const App = ({ children }) => (
-  <div>
+  <div className="app-page">
+    <NoteEditorContainer />
     <Sheet/>
     {children}
   </div>

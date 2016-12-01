@@ -8,7 +8,9 @@ class NoteLine extends React.Component {
   }
 
   handleClick() {
-    console.log(this.props.note);
+    if (this.props.noteType) {
+      this.props.addNote({[this.props.note]: this.props.noteType});
+    }
   }
 
   render () {
@@ -22,7 +24,7 @@ class NoteLine extends React.Component {
     }
 
     return (
-      <div
+      <div className="noteLines"
         onClick={this.handleClick}
         >
         { el }

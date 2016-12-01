@@ -1,0 +1,55 @@
+.sheet-container {
+  width: 1020px;
+  height: 1300px;
+  background-color: #fff;
+  box-shadow: 0 -1px #e7e8ec,0 0 38px 0 rgba(0,0,0,.11),0 0 12px 0 rgba(0,0,0,.08),0 0 38px 0 rgba(0,0,0,.11);
+  display: flex;
+  position: relative;
+  top: 100px;
+  box-sizing: border-box;
+
+
+  >div {
+    margin: 15px 30px 0 30px;
+  }
+
+  .staff-container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin-top: 80px;
+
+    ol {
+      width: 100%;
+      box-sizing: border-box;
+      border-left: 3px solid #000;
+      border-right: 3px solid #000;
+      li {
+        height: 8px;
+        padding: 0;
+        width: 100%;
+
+        hr {
+          position: relative;
+          top: 3px;
+          padding: 0;
+          margin: 0;
+          border: .5px solid #aaa;
+        }
+      }
+
+      li:hover {
+        background-color: #ccc;
+        cursor: crosshair;
+      }
+
+      li:nth-child(odd) {
+      }
+    }
+
+
+    .note {
+
+    }
+  }
+}

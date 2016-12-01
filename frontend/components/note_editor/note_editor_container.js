@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
 import NoteEditor from './note_editor';
-import { addNote } from '../../actions/song_actions';
+import { selectNoteType } from '../../actions/note_editor_actions';
 
 const mapStateToProps = state => ({
-
+  noteType: state.noteType
 });
 
 const mapDispatchToProps = ( dispatch ) => ({
-  addNote: dispatch(addNote())
+  selectNoteType: noteType => dispatch(selectNoteType(noteType))
 });
 
 export default connect(
