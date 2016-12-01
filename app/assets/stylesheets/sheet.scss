@@ -4,11 +4,51 @@
   background-color: #fff;
   box-shadow: 0 -1px #e7e8ec,0 0 38px 0 rgba(0,0,0,.11),0 0 12px 0 rgba(0,0,0,.08),0 0 38px 0 rgba(0,0,0,.11);
   display: flex;
+  flex-direction: column;
   position: relative;
   top: 100px;
 
   padding: 30px;
   box-sizing: border-box;
+
+  .song-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    height: 115px;
+
+    input {
+      margin: 10px;
+      padding: 5px 0;
+      border: none;
+      text-align: center;
+      font-family: MuseoSansRounded, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    input:focus {
+      outline: none;
+      border-bottom: 2px solid #E6E6E6;
+      box-sizing: border-box;
+      margin-bottom: 8px
+    }
+
+    input:hover {
+      border-bottom: 2px solid #E6E6E6;
+      box-sizing: border-box;
+      margin-bottom: 8px
+    }
+
+    .song-title {
+      font-size: 1.75rem;
+
+    }
+    .song-artist {
+      font-size: 1rem;
+
+    }
+  }
 
   .staff-container {
     width: 100%;

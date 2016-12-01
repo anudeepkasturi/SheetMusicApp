@@ -2,7 +2,6 @@ import {
   SELECT_NOTE_TYPE
 } from '../actions/note_editor_actions';
 
-
 let defaultState = null;
 
 const NoteEditorReducer = (state = defaultState, action) => {
