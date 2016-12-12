@@ -30,7 +30,7 @@ This application will be built using React and Redux. The sample state is shown 
     C: 1, //quarter note
     E: 2  //half note
   },
-  //selected noteType is a whole note.
+  //The selected noteType is a whole note.
   //This type of note will be added at a particular
   //pitch when the staff is clicked
   noteType: 4,

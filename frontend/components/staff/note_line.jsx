@@ -6,7 +6,7 @@ class NoteLine extends React.Component {
 
     this.handleClick = this.handleClick.bind(this);
   }
-
+r
   handleClick() {
     if (this.props.noteType) {
       this.props.addNote({[this.props.note]: this.props.noteType});

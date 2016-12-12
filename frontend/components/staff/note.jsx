@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 class Note extends React.Component {
   constructor(props) {
     super(props);
@@ -28,36 +26,43 @@ class Note extends React.Component {
     let noteLength = Object.values(note)[0];
 
     let heightAdjust = 104;
+    let xAdjust = 70;
 
     if(noteLength === 4) {
+      heightAdjust += 2;
+
       note = (<img
         className="whole-note"
         src="/assets/whole_note.png"
         style={{
           top: NOTE_Y_POS[noteName] + heightAdjust + 'px',
-          left: 50 + this.props.id*28 + 'px'
+          left: 50 + xAdjust + this.props.id*28 + 'px'
         }}
         ></img>);
     } else if (noteLength === 2) {
-      heightAdjust -= 50;
+      heightAdjust -= 48;
       note = (<img
         className="half-note"
         src="/assets/half_note.png"
         style={{
           top: NOTE_Y_POS[noteName] + heightAdjust + 'px',
-          left: 50 + this.props.id*28 + 'px'
+          left: 50 + xAdjust + this.props.id*28 + 'px'
         }}
         ></img>);
     } else if (noteLength === 1) {
-      heightAdjust -= 40;
-      note = (<img
-        className="quarter-note"
-        src="/assets/quarter_note.png"
-        style={{
-          top: NOTE_Y_POS[noteName] + heightAdjust + 'px',
-          left: 50 + this.props.id*28 + 'px'
-        }}
-        ></img>);
+      heightAdjust -= 50;
+
+      note = (
+        <img
+          className="quarter-note2"
+            src="/assets/quarter_note.svg"
+            style={{
+              top: NOTE_Y_POS[noteName] + heightAdjust + 'px',
+              left: 50 + xAdjust + this.props.id*28 + 'px'
+            }}
+          ></img>
+      );
+
     }
 
     return (

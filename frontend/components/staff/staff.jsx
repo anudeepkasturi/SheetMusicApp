@@ -1,14 +1,11 @@
 import React from 'react';
 import Note from './note';
 import NoteLineContainer from './note_line_container';
+import NotePointContainer from './note_point_container';
 
 class Staff extends React.Component {
   constructor(props) {
     super(props);
-  }
-
-  componentWillReceiveProps(nextState) {
-
   }
 
   render () {
@@ -29,14 +26,43 @@ class Staff extends React.Component {
       notes.push(<Note key={j} id={j} note={note}/>);
     }
 
+    let grid = [];
+
+    for (var l = 0; l < NOTES.length; l++) {
+      let gridRow = [];
+      for (var k = 0; k < 17; k++) {
+        let id = `${l} ${k}`;
+        gridRow.push(
+          <NotePointContainer
+            key={id}
+            id={id}
+            note={NOTES[l]}
+            ></NotePointContainer>);
+      }
+
+      grid.push(
+        <tr id={NOTES[l]} key={l}>
+          { gridRow }
+        </tr>
+      );
+    }
+
     return (
       <div className="staff-container">
         <ol>
           { noteLines }
         </ol>
+        <div className="staff-props">
+          <img id="clef" src="/assets/treble_clef.png"></img>
+          <img id="time-sig" src="/assets/time_signature.png"></img>
+        </div>
         { notes }
+        <table className="grid">
+          <tbody>
+            { grid }
+          </tbody>
+        </table>
       </div>
-
     );
   }
 }
