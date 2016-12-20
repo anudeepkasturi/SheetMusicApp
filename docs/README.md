@@ -7,7 +7,7 @@ Writing sheet music can be tedious work. Especially for music teachers, the volu
 ## Minimum Viable Product
 
 The minimum viable product will render a a page with editable staffs on it:
-* Users can add, edit and delete whoel, half, and quarter notes to the staff
+* Users can add, edit and delete whole, half, and quarter notes to the staff
 * It will display a treble clef and a common time signature
 * Songs will be in the key of C major (no sharps or flats)
 

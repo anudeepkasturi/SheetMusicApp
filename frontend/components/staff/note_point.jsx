@@ -8,7 +8,6 @@ class NotePoint extends React.Component {
   }
 
   handleClick() {
-    console.log(this.props);
     if (this.props.noteType) {
       this.props.addNote({[this.props.note]: this.props.noteType});
     }
@@ -18,7 +17,7 @@ class NotePoint extends React.Component {
     return (
         <td
           onClick={this.handleClick}
-          ></td>
+        ></td>
     );
   }
 }
