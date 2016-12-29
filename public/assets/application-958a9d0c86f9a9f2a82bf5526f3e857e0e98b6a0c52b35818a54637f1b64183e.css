@@ -1,0 +1,305 @@
+/* line 1, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/note_editor.scss */
+.note-editor-container {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(141deg, #33b1f8 10%, #6e90f6 90%);
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  height: 55px;
+}
+/* line 11, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/note_editor.scss */
+.note-editor-container .note-editor {
+  margin: 0 20px;
+}
+/* line 14, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/note_editor.scss */
+.note-editor-container .note-editor button {
+  border: none;
+  box-shadow: 0 2px 12px 2px rgba(2, 12, 40, 0.2);
+  margin: 5px 3px 5px 3px;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #33b1f8;
+  font-size: 13px;
+}
+/* line 27, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/note_editor.scss */
+.note-editor-container .note-editor button:hover {
+  cursor: pointer;
+}
+/* line 31, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/note_editor.scss */
+.note-editor-container .note-editor button:focus {
+  outline: none;
+}
+/* line 35, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/note_editor.scss */
+.note-editor-container .note-editor button.active {
+  background-color: #2c6799;
+  color: #fff;
+  box-shadow: none;
+}
+/* line 1, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/reset.scss */
+html {
+  height: 100%;
+  min-height: 1500px;
+  background: linear-gradient(#E6E6E6, #ccc);
+}
+
+/* line 32, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/reset.scss */
+body, .user-page, #root, #root > div {
+  height: 100%;
+  line-height: 1;
+  background: linear-gradient(#E6E6E6, #ccc);
+}
+
+/* line 39, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 42, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 45, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 50, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 1, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container {
+  width: 1020px;
+  height: 1300px;
+  background-color: #fff;
+  box-shadow: 0 -1px #e7e8ec, 0 0 38px 0 rgba(0, 0, 0, 0.11), 0 0 12px 0 rgba(0, 0, 0, 0.08), 0 0 38px 0 rgba(0, 0, 0, 0.11);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+/* line 18, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .song-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  height: 115px;
+}
+/* line 26, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .song-info input {
+  margin: 10px;
+  padding: 5px 0;
+  border: none;
+  text-align: center;
+  font-family: MuseoSansRounded, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 34, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .song-info input:focus {
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+/* line 41, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .song-info input:hover {
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+/* line 47, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .song-info .song-title {
+  font-size: 1.75rem;
+}
+/* line 50, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .song-info .song-artist {
+  font-size: 1rem;
+}
+/* line 55, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container {
+  width: 100%;
+  height: calc(100% - 60px);
+  margin: 30px 0;
+}
+/* line 60, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container ol {
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+  position: relative;
+}
+/* line 67, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container ol li {
+  height: 8px;
+  padding: 0;
+  width: 100%;
+}
+/* line 72, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container ol li hr {
+  position: relative;
+  top: 3px;
+  padding: 0;
+  margin: 0;
+  border: .5px solid #aaa;
+}
+/* line 82, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container #clef > svg {
+  height: auto;
+  width: 37px;
+  margin-left: 7px;
+  display: flex;
+  position: absolute;
+  top: 150px;
+}
+/* line 92, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container #time-sig > svg {
+  width: 25px;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 170px;
+  left: 80px;
+}
+/* line 102, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container table {
+  width: calc(100% - 60px);
+  height: 160px;
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  top: 165px;
+  left: 120px;
+}
+/* line 112, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container table tbody {
+  width: 100%;
+}
+/* line 116, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container table tr {
+  width: 100%;
+  height: 8px;
+}
+/* line 120, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container table tr td {
+  width: 50px;
+  height: 8px;
+}
+/* line 125, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container table tr td:hover {
+  z-index: -1;
+  cursor: crosshair;
+  background-color: #ccc;
+}
+/* line 134, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container .note > img {
+  height: auto;
+  width: 28px;
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+/* line 145, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container .note {
+  height: auto;
+  width: 28px;
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+/* line 156, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container .quarter-note-svg, .sheet-container .staff-container .half-note-svg, .sheet-container .staff-container .whole-note-svg {
+  height: auto;
+  width: 23px;
+  z-index: 2;
+  position: absolute;
+}
+/* line 164, /Users/anudeepkasturi/Documents/App Academy/sheet_music_app/app/assets/stylesheets/sheet.scss */
+.sheet-container .staff-container .quarter-note2 {
+  height: auto;
+  width: 28px;
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+
+ body {
+   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   line-height: 1.42857143;
+   color: #333333;
+   background-color: #fff;
+   height: 100%;
+ }
+
+main>div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}

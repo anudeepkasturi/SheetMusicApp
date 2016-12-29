@@ -4,7 +4,6 @@ import SVGInline from "react-svg-inline";
 class Note extends React.Component {
   constructor(props) {
     super(props);
-
   }
 
   render () {
@@ -26,7 +25,7 @@ class Note extends React.Component {
     let noteLength = Object.values(note)[0];
 
     let heightAdjust = 104;
-    let xAdjust = 120;
+    let xAdjust = 80;
 
     if(noteLength === 4) {
       heightAdjust -= 24;
