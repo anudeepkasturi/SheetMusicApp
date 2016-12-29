@@ -5,6 +5,9 @@
 
   Users can create pages of sheet music with this editor. Simply select the type of note and place it on the staff. At the moment, users can only place whole, half and quarter notes on the staff, but will soon be able to add all types of notes.
 
+![Ekho]
+[Ekho]: ./app/assets/images/ekho.gif
+
 ### Built Using React.js
 
   The DOM of this application is handled by React, which optimizes how adding and deleting notes is optimized.
@@ -22,4 +25,4 @@
 
   The main goal of this application is to convert recordings of a single instrument (e.g. a piano solo) into sheet music.
 
-  The process of accomplishing this can get quite complex, so the first step is to transpose a single note frequency to a note on the staff. This is done using a Fourier Transform. A single note frequency is just a simple sine wave. The output of the Fourier Transform of the sine wave is its frequency. The frequency can then be used to generate a note and be placed on the staff. 
+  The process of accomplishing this can get quite complex, so the first step is to transpose a single note frequency to a note on the staff. This is done using a Fourier Transform. A single note frequency is just a simple sine wave. The output of the Fourier Transform of the sine wave is its frequency. The frequency can then be used to generate a note and be placed on the staff.
