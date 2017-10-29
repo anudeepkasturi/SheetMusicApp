@@ -3,7 +3,8 @@ import NotePoint from './note_point';
 import { addNote } from '../../actions/song_actions';
 
 const mapStateToProps = state => ({
-  noteType: state.noteType
+  noteType: state.noteType,
+  song: state.song
 });
 
 const mapDispatchToProps = ( dispatch ) => ({

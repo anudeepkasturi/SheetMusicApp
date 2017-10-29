@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
+import muiTheme from './components/theme';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
 
 //testing
 import { addNote } from './actions/song_actions';
@@ -18,8 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //testing
   window.store = store;
-  window.addNote = addNote;
-
-
+  window.muiTheme = muiTheme;
 
 });

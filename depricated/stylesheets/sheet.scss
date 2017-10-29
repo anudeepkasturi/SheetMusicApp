@@ -35,13 +35,13 @@
       outline: none;
       border-bottom: 2px solid #ccc;
       box-sizing: border-box;
-      margin-bottom: 8px
+      margin-bottom: 8px;
     }
 
     input:hover {
       border-bottom: 2px solid #ccc;
       box-sizing: border-box;
-      margin-bottom: 8px
+      margin-bottom: 8px;
     }
 
     .song-title {
@@ -100,8 +100,8 @@
     }
 
     table {
-      width: calc(100% - 60px);
-      height: 160px;
+      width: calc(100% - 150px);
+      height: 72px;
       display: flex;
       position: absolute;
       box-sizing: border-box;

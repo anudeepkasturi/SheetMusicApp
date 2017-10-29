@@ -1,12 +1,11 @@
 import {
   EDIT_SONG_INFO
 } from '../actions/song_info_actions';
-
 import merge from 'lodash/merge';
 
 let defaultState = {
-  title: "Title",
-  artist: "Artist"
+  title: "",
+  artist: ""
 };
 
 const SongInfoReducer = (state = defaultState, action) => {

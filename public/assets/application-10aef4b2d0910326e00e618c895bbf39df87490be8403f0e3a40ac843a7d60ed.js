@@ -39751,9 +39751,9 @@ return jQuery;
 	
 	var _note3 = _interopRequireDefault(_note2);
 	
-	var _note_line_container = __webpack_require__(269);
+	var _staff_line_container = __webpack_require__(269);
 	
-	var _note_line_container2 = _interopRequireDefault(_note_line_container);
+	var _staff_line_container2 = _interopRequireDefault(_staff_line_container);
 	
 	var _note_point_container = __webpack_require__(272);
 	
@@ -39786,10 +39786,10 @@ return jQuery;
 	
 	      var NOTES = ['F1', 'E1', 'D1', 'C1', 'B1', 'A1', 'G0', 'F0', 'E0'];
 	
-	      var noteLines = [];
+	      var staffLines = [];
 	      for (var i = 1; i <= 9; i++) {
 	        var note = NOTES[i - 1];
-	        noteLines.push(_react2.default.createElement(_note_line_container2.default, { key: i, id: i, note: note }));
+	        staffLines.push(_react2.default.createElement(_staff_line_container2.default, { key: i, id: i, note: note }));
 	      }
 	
 	      var notes = [];
@@ -39826,7 +39826,7 @@ return jQuery;
 	        _react2.default.createElement(
 	          'ol',
 	          null,
-	          noteLines
+	          staffLines
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -40160,9 +40160,9 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(179);
 	
-	var _note_line = __webpack_require__(270);
+	var _staff_line = __webpack_require__(270);
 	
-	var _note_line2 = _interopRequireDefault(_note_line);
+	var _staff_line2 = _interopRequireDefault(_staff_line);
 	
 	var _song_actions = __webpack_require__(271);
 	
@@ -40182,7 +40182,7 @@ return jQuery;
 	  };
 	};
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_note_line2.default);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_staff_line2.default);
 
 /***/ },
 /* 270 */
@@ -40210,19 +40210,19 @@ return jQuery;
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var NoteLine = function (_React$Component) {
-	  _inherits(NoteLine, _React$Component);
+	var StaffLine = function (_React$Component) {
+	  _inherits(StaffLine, _React$Component);
 	
-	  function NoteLine(props) {
-	    _classCallCheck(this, NoteLine);
+	  function StaffLine(props) {
+	    _classCallCheck(this, StaffLine);
 	
-	    var _this = _possibleConstructorReturn(this, (NoteLine.__proto__ || Object.getPrototypeOf(NoteLine)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (StaffLine.__proto__ || Object.getPrototypeOf(StaffLine)).call(this, props));
 	
 	    _this.handleClick = _this.handleClick.bind(_this);
 	    return _this;
 	  }
 	
-	  _createClass(NoteLine, [{
+	  _createClass(StaffLine, [{
 	    key: "handleClick",
 	    value: function handleClick() {
 	      if (this.props.noteType) {
@@ -40246,7 +40246,7 @@ return jQuery;
 	
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "noteLines",
+	        { className: "staffLines",
 	          onClick: this.handleClick
 	        },
 	        el
@@ -40254,10 +40254,10 @@ return jQuery;
 	    }
 	  }]);
 	
-	  return NoteLine;
+	  return StaffLine;
 	}(_react2.default.Component);
 	
-	exports.default = NoteLine;
+	exports.default = StaffLine;
 
 /***/ },
 /* 271 */

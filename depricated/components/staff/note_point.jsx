@@ -9,13 +9,18 @@ class NotePoint extends React.Component {
 
   handleClick() {
     if (this.props.noteType) {
-      this.props.addNote({[this.props.note]: this.props.noteType});
+      this.props.addNote({
+        note: this.props.note,
+        noteLength: this.props.noteType,
+        notePoint: this.props.id
+      });
     }
   }
 
   render () {
     return (
         <td
+          id={this.props.id}
           onClick={this.handleClick}
         ></td>
     );

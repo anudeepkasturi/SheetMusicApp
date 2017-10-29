@@ -22,6 +22,8 @@
       background-color: #fff;
       color: #33b1f8;
       font-size: 13px;
+      transition: box-shadow 0.2s, background-color 0.2s, color 0.2s;
+      transition-timing-function: linear;
     }
 
     button:hover {

@@ -6,7 +6,6 @@ let defaultState = [];
 
 const SongReducer = (state = defaultState, action) => {
   Object.freeze(state);
-
   let newState = state;
 
   switch (action.type) {

@@ -1,12 +1,13 @@
-# Ekho: Sheet Music Editor
+# Echo: Sheet Music Editor
 
 ## Features
 ### Create Sheet Music
 
   Users can create pages of sheet music with this editor. Simply select the type of note and place it on the staff. At the moment, users can only place whole, half and quarter notes on the staff, but will soon be able to add all types of notes.
 
-![Ekho]
-[Ekho]: ./app/assets/images/ekho.gif
+![Echo]
+[Echo]: .app/assets/images/echo.gif
+
 
 ### Built Using React.js
 
@@ -21,7 +22,7 @@
 
   Users will soon be able to add key signatures to the staff and the song will be adjusted accordingly. In addition to that, users can create sheets for different instruments by changing the clef.
 
-### Ekho: Take a recording and convert it to sheet music
+### Echo: Take a recording and convert it to sheet music
 
   The main goal of this application is to convert recordings of a single instrument (e.g. a piano solo) into sheet music.
 

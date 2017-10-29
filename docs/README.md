@@ -25,15 +25,20 @@ This application will be built using React and Redux. The sample state is shown 
 ```js
 {
   song: {
-    //keys will be the notes, values will be their length
-    A: 4, //whole note
-    C: 1, //quarter note
-    E: 2  //half note
+    //keys will be the note ID, values contain the pitch, position, note length, and any other properties
+    1: {id: 1, pitch: A, length: 1, position: [1,3] },
+    2: {id: 2, pitch: C, length: 1, position: [1,5], accidental: "sharp"},
+    3: {id: 3, pitch: E, length: 1, position: [1,7] },
+    4: {id: 4, pitch: F, length: 1/2, position: [2,1], dotted: true},
   },
+  songInfo: {
+    title: "Claire De Lune",
+    artist: "Claude Debussy"
+  }
   //The selected noteType is a whole note.
   //This type of note will be added at a particular
   //pitch when the staff is clicked
-  noteType: 4,
+  note: {id: 0, pitch: C, length: 1/4, position: [2,5], accidental: "sharp", dotted: true}
   errors: {}
 }
 ```
